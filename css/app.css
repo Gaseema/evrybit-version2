@@ -1,5 +1,10 @@
 body {
     margin: 0px;
+    width: 100%;
+}
+
+.slide-navigation img {
+    width: 160px;
 }
 
 .main_h {
@@ -38,7 +43,7 @@ body {
     background-color: rgba(4, 15, 54, 0.93);
     opacity: 1;
     top: 0px;
-    border-bottom: 1px solid gainsboro;
+    box-shadow: 0px 5px 10px #161337;
 }
 
 .logo {
@@ -128,23 +133,17 @@ nav ul a {
 
 .mobile-toggle span {
     width: 30px;
-    height: 4px;
+    height: 2px;
     margin-bottom: 6px;
-    border-radius: 1000px;
+    /*    border-radius: 1000px;*/
     background: #8f8f8f;
     display: block;
 }
 
 .row {
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
     position: relative;
-    padding: 0 2%;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 
@@ -246,7 +245,7 @@ nav ul a {
 }
 
 .about-evrybit p {
-    font-size: 2em;
+    font-size: 2.6vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -262,3 +261,106 @@ nav ul a {
     margin-top: 40px;
     height: 330px
 }
+
+
+/*********************************************/
+
+.services {
+    min-width: 100%;
+}
+
+.services h5 {
+    text-align: center;
+    color: gold;
+    padding-top: 60px
+}
+
+.services hr {
+    width: 550px;
+    background-color: gold;
+}
+
+.services button {
+    border: solid white 3px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.right-arrow {
+    display: inline-block;
+    position: relative;
+    background: white;
+    padding: 15px;
+    height: 350px;
+}
+
+.right-arrow p {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.5vw;
+}
+
+.right-arrow:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 40%;
+    margin-top: -10px;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 40px solid white;
+}
+
+.leftie {
+    background-color: red;
+    height: 350px
+}
+
+.left-arrow {
+    display: inline-block;
+    position: relative;
+    background: black;
+    padding: 15px;
+    height: 350px;
+}
+
+.left-arrow p {
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.5vw;
+}
+
+.left-arrow:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -10px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 30px solid black;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.rightie {
+    height: 350px;
+    background-color: white;
+    background-image: url(../img/news.jpg)
+}
+
+
+/*********************************************/
