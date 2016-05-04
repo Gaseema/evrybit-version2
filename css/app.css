@@ -1,0 +1,264 @@
+body {
+    margin: 0px;
+}
+
+.main_h {
+    position: fixed;
+    top: 0px;
+    max-height: 70px;
+    z-index: 999;
+    width: 100%;
+    padding-top: 17px;
+    background: none;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+    top: -100px;
+    padding-bottom: 6px;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 766px) {
+    .main_h {
+        padding-top: 25px;
+    }
+}
+
+.open-nav {
+    max-height: 400px !important;
+}
+
+.open-nav .mobile-toggle {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+    background-color: rgba(4, 15, 54, 0.93);
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+    font-size: 35px;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Lora', serif;
+}
+
+@media only screen and (max-width: 766px) {
+    .logo {
+        float: none;
+    }
+}
+
+nav {
+    float: right;
+    width: 60%;
+}
+
+@media only screen and (max-width: 766px) {
+    nav {
+        width: 100%;
+    }
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+}
+
+@media only screen and (max-width: 766px) {
+    nav ul {
+        padding-top: 10px;
+        margin-bottom: 22px;
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 766px) {
+    nav ul li {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+    }
+}
+
+nav ul a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.mobile-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    width: 30px;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+@media only screen and (max-width: 766px) {
+    .mobile-toggle {
+        display: block;
+    }
+}
+
+.mobile-toggle span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: #8f8f8f;
+    display: block;
+}
+
+.row {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 2%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*********************************************/
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    height: 100vh;
+}
+
+.hero .top-bar-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+.hero .top-bar-nav li {
+    float: left;
+}
+
+.hero .top-bar-nav .logo-pad {
+    margin-left: 80px;
+}
+
+.hero .top-bar-nav .logo-pad img {
+    width: 150px
+}
+
+.hero .top-bar-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 0.95em
+}
+
+.hero .top-bar-nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.hero .top-bar-nav .active {
+    background-color: transparent;
+    border: solid white 1px;
+    margin-right: 50px;
+}
+
+.welcome-note {
+    float: left;
+    margin-top: 7%;
+    margin-left: 60px
+}
+
+.welcome-note span {
+    font-size: 4em;
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+.welcome-note h4 {
+    text-align: left;
+    color: white;
+    padding-left: 2px;
+    font-family: 'Poiret One', cursive;
+    font-size: 2em
+}
+
+.welcome-note p {
+    color: white;
+    padding-left: 2px;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em
+}
+
+.welcome-note button {
+    color: white;
+    border: solid white 1px;
+    padding: 10px;
+    margin-left: 2px
+}
+
+
+/*************************************************************/
+
+.about-evrybit {
+    height 500px;
+    min-width: 100%
+}
+
+.about .left-side {
+    height: 400px;
+}
+
+.about .right-side {
+    height: 400px;
+}
+
+.about-evrybit p {
+    font-size: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-left: 40px;
+}
+
+.about-evrybit img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    height: 330px
+}
